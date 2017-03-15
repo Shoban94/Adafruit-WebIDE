@@ -32,7 +32,7 @@ var express = require('express'),
 var davServer,
     HOSTNAME,
     IS_PASSPORT_SETUP = false,
-    REPOSITORY_PATH = path.resolve(__dirname + "/repositories");
+    REPOSITORY_PATH = path.resolve("/home/pi/Dexter/GoPiGo/Software/Python");
 
 winston.info("REPOSITORY_PATH", REPOSITORY_PATH);
 
