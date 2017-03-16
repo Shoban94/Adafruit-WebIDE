@@ -114,7 +114,7 @@
   };
 
   occEditor.init = function(id) {
-    occEditor.set_page_title("Sam Software");
+    occEditor.set_page_title("Dexter Industries");
 
     editor = ace.edit("editor");
     editor.setTheme("ace/theme/merbivore_soft");
@@ -374,9 +374,9 @@
   occEditor.set_page_title = function(name) {
     //update page title
     if (name === 'filesystem') {
-      name = "Sam Software";
+      name = "Dexter Industries";
     }
-    document.title = name + " - Dexter Industries WebIDE";
+    document.title = name + "- WebIDE";
   };
 
   occEditor.populate_editor = function(file, content) {
