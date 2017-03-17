@@ -908,17 +908,20 @@
     $('.navigator-item-create:first-child').html('<a class="create-link"></a>');
     var $create_link = $('.navigator-item-create:first-child .create-link');
     var $create_modal = $('#create-modal');
+	//////////////////////////////////////////////
+	// John's Fix:  This populates the file directory bar with the initial top-line folder at first, and you can immediately make new folders and files in the top directory.
     if (item.name === 'filesystem') {
       $('.navigator-item-create:nth-child(2)').remove();
       $('.navigator-item-upload').remove();
-      $create_link.text('+ Clone Repository');
-      $('h3', $create_modal).text("Clone Repository");
-      $('.modal-body p', $create_modal).html(templates.create_clone_repository);
+      // $create_link.text('+ Clone Repository');
+      // $('h3', $create_modal).text("Clone Repository");
+      // $('.modal-body p', $create_modal).html(templates.create_clone_repository);
       $('.modal-submit', $create_modal).text('Clone Repository');
-    } else if (item.parent_name === 'filesystem') {
+    /* } else if (item.parent_name === 'filesystem') {
       $('.navigator-item-create:nth-child(2)').remove();
       $('.navigator-item-upload').remove();
       $create_link.text('+ Create Project Folder');
+	*/
     } else {
       $create_link.text('+ Create New File');
 
