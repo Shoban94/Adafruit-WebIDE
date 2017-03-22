@@ -5,11 +5,11 @@ html
     .navbar.navbar-fixed-top.navbar-inverse
       .navbar-inner
         .container-fluid
-          a.brand(href="/")
+          a.brand(href="http://10.10.10.10:80")
             img(src="/images/WebIDE_Logo_Beta@2x.png", style="height:30px;")
           p.logout-wrapper
             - if (typeof profile !== "undefined")
-              a(href="/logout") Log out
+              a(href="http://10.10.10.10:80") Log out
           p.update-wrapper
           div.connection-state
 
